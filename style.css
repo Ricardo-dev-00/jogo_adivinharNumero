@@ -1,0 +1,116 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6f96eb, #070157, #3845ff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Fim CSS Reset */
+
+/* Global Styles */
+main {
+    text-align: center;
+    padding: 100px 10px;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main input {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border: 1px solid #000;
+    width: 50%;
+}
+
+main button {
+    font-size: 1.5rem;
+    border: 1px solid #0fad2a;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #0fad2a;
+}
+
+#resultado,
+#tentativas {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#resultado {
+    color: #0fad2a;
+}
+
+#tentativas {
+    color: #f00;
+}
+
+/* Fim Global Styles */
